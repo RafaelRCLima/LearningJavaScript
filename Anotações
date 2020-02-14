@@ -1,0 +1,48 @@
+É importante saber as funções básicas:
+
+String replace
+variavel.replace('valor', 'substituicao')
+
+
+Exemplos:
+
+  const CPFSemFormatacao = 'cpf é 25684677037'
+
+  const CPFFormatado = CPFSemFormatacao.replace('25684677037', '256.846.770-37') 
+
+  console.log(CPFFormatado) 
+  // O retorno será 'cpf é 256.846.770-37'
+
+  const frase = 'Frase com uma palavra-feia'
+
+  frase.replace('palavra-feia', '********') 
+
+  console.log(frase) // O retorno seria 'Frase com uma *****
+
+===========================================
+
+Regex(regular expressions)
+
+
+const frase = 'Frase com uma palavra-feia e tem outra palavra-feia no final'
+
+
+REMOVE SOMENTE A PRIMEIRA OCORRÊNCIA NA STRING
+
+  const fraseAtualizada = frase.replace('palavra-feia', '********') 
+  console.log(fraseAtualizada) // O retorno seria "Frase com uma ******** e tem outra palavra-feia no final"
+
+PARA REMOVER AS DEMAIS OCORRÊNCIAS:
+
+  const frase = 'Frase que começa com um palavra-feia e tem outra palavra-feia no final'
+
+  const fraseAtualizada = frase.replace(/palavra-feia/, '********') 
+  console.log(fraseAtualizada) // "Frase que começa com um ******** e tem outra ******** no final"
+
+Formas de trabalhar com Regex
+/palavra/ e /98495708/ funcionam igual o exemplo de cima
+
+[A-Z0-9!-] - Pegar caracteres sem importancia de ordem
+
+[A-Z0-9!-]{3} - 
+

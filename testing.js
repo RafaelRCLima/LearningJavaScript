@@ -1,15 +1,40 @@
-function carta(nome, tipo, ataque, defesa) {
+function produto(nome, preco, id){
     this.nome = nome
-    this.tipo = tipo
-    this.ataque = ataque
-    this.defesa = defesa
+    this.preco = preco
+    this.id = id
 }
 
-const magoNegro = new carta('Mago Negro', 'Mago', 2500, 2100)
-console.log(magoNegro)
+const caneta = new produto('bic', 1.9, 781823)
 
-//destructuring <<====
+console.log(caneta)
 
-const { nome, ataque } = magoNegro
+function movel(nome, preco, id, tamanho) {
+    this.nome = nome
+    this.preco = preco
+    this.id = id
+    this.tamanho = tamanho
+}
 
-console.log('\nNome: ' + nome, '\nAtaque: ' + ataque)
+const armario = new movel('becan', 800.00, 787530, '1.5x3')
+console.log(armario)
+
+
+function difere(a, b) {
+    if (a !== 1 || b !== 1){
+        console.log('Insira dois números por favor')
+    }else{
+        console.log(a + b)
+    }
+}
+
+difere(3, 'z')
+
+console.log(typeof 9)
+
+let a = 5
+if ((a * 1) == a){
+    console.log('Ta serto')
+}
+
+console.log(typeof(5))
+console.log(!!0)
