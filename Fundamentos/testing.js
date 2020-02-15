@@ -1,4 +1,4 @@
-function produto(nome, preco, id){
+function produto(nome, preco, id) {
     this.nome = nome
     this.preco = preco
     this.id = id
@@ -20,9 +20,9 @@ console.log(armario)
 
 
 function difere(a, b) {
-    if (a !== 1 || b !== 1){
+    if (a !== 1 || b !== 1) {
         console.log('Insira dois números por favor')
-    }else{
+    } else {
         console.log(a + b)
     }
 }
@@ -32,9 +32,12 @@ difere(3, 'z')
 console.log(typeof 9)
 
 let a = 5
-if ((a * 1) == a){
+if ((a * 1) == a) {
     console.log('Ta serto')
 }
 
-console.log(typeof(5))
+console.log(typeof (5))
 console.log(!!0)
+
+
+console.log(Math.floor(Math.random() * (10 - 5) + 5))
