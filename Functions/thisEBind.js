@@ -34,3 +34,4 @@ function Pessoa2() {
 }
 
 new Pessoa2
+
