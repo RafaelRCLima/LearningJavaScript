@@ -26,3 +26,5 @@ for (let i = 0; i <= 50; i++) {
     ferrari.acelerar()
 }
 console.log(ferrari.getVelocidadeAtual())
+console.log(typeof Carro) //Função
+console.log(typeof ferrari) //Objeto
