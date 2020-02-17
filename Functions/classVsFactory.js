@@ -20,3 +20,4 @@ const criarPessoa = nome => {
 const p2 = criarPessoa('Ricardo')
 p2.falar()
 
+//Comentario
