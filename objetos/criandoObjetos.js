@@ -15,14 +15,14 @@ function Produto(nome, preco, desconto) {
     }
 }
 
-const p1 = new Produto('Caneta', 7.99, 0.15)
+const p1 = Object.preventExtensions(new Produto('Caneta', 7.99, 0.15))
 
 //Object.freeze(p1) - Não faz sentido usar
 const p2 = new Produto('Notebook', 2998.99, 0.25)
 console.log(p1.getPrecoComDesconto(), p2.getPrecoComDesconto())
 
-// p1.preco = 123 //- Cuidado! Isso cria um novo atributo dentro de Produto com um escopo diferente.
-// console.log(p1.preco) //- Assim preco fica visível e pode ser acessado com .(ponto)
+p1.preco = 123 //- Cuidado! Isso cria um novo atributo dentro de Produto com um escopo diferente.
+console.log("Não foi incluído o preço: ",p1) //- Assim preco fica visível e pode ser acessado com .(ponto)
 
 //Função Factory
 function criarFuncionario(nome, salarioBase, faltas){
