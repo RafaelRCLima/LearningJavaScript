@@ -1,4 +1,4 @@
-Array.prototype.map2 = function(callback) {
+Array.prototype.map2 = function (callback) {
     const newArray = []
     for (let i = 0; i < this.length; i++) {
         newArray.push(callback(this[i], i, this))
@@ -13,7 +13,7 @@ const carrinho = [
     '{ "nome": "Caneta", "preco": 7.50 }'
 ]
 
-//retornar array somente com preços
+// retornar array somente com preços
 
 console.log(carrinho)
 
