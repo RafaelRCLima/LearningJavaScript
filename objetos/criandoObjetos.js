@@ -22,10 +22,10 @@ const p2 = new Produto('Notebook', 2998.99, 0.25)
 console.log(p1.getPrecoComDesconto(), p2.getPrecoComDesconto())
 
 p1.preco = 123 //- Cuidado! Isso cria um novo atributo dentro de Produto com um escopo diferente.
-console.log("Não foi incluído o preço: ",p1) //- Assim preco fica visível e pode ser acessado com .(ponto)
+console.log("Não foi incluído o preço: ", p1) //- Assim preco fica visível e pode ser acessado com .(ponto)
 
 //Função Factory
-function criarFuncionario(nome, salarioBase, faltas){
+function criarFuncionario(nome, salarioBase, faltas) {
     return {
         nome,
         salarioBase,
@@ -48,3 +48,15 @@ console.log(filha)
 //A partir de JSON
 const fromJSON = JSON.parse('{"info": "Sou um JSON"}')
 console.log(fromJSON.info)
+
+const pessoa = {
+    "id": 3,
+    "idTelegram": 86386431,
+    "name": "Alberto",
+    "created_at": "2020-06-12T16:26:16.035Z",
+    "updated_at": "2020-06-12T16:26:16.035Z"
+}
+
+pessoa.log = ['value 1', 'value2']
+
+console.log(pessoa)
