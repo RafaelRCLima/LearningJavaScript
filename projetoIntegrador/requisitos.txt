@@ -1,0 +1,11 @@
+Checkin
+  Entrada de dados:
+    - Nome
+    - Documento
+    - Número do quarto
+
+Checkout
+  Saída de dados:
+    - apagar a entrada
+      a partir do numero
+      ou a partir do documento
